@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#07090b"
+    >
+
+    <meta
+        name="description"
+        content="Una pequeña sorpresa para mi hijo."
+    >
+
+    <title>Para mi hijo — nuestro OGI #1</title>
+
+
+    <!-- FUENTES -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ICONOS -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="estilos.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         PANTALLA DE LOGIN
+    ====================================================== -->
+
+    <div id="pantalla-login">
+
+
+        <div class="login-decoracion">
+
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+
+        </div>
+
+
+        <div class="login-contenedor">
+
+
+            <div class="login-simbolo">
+
+                <i class="fa-solid fa-spider"></i>
+
+            </div>
+
+
+            <p class="login-subtitulo">
+                THE HOUSE OF SPIDERS
+            </p>
+
+
+            <h1>
+                Para Bill
+            </h1>
+
+
+            <p class="login-descripcion">
+                Una pequeña sorpresa espera detrás
+                de esta puerta.
+            </p>
+
+
+            <!-- FORMULARIO -->
+
+            <form id="formulario-login">
+
+
+                <!-- USUARIO -->
+
+                <div class="campo-login">
+
+                    <label for="usuario">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Usuario
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Escribe el nombre..."
+                        autocomplete="off"
+                        spellcheck="false"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CONTRASEÑA -->
+
+                <div class="campo-login">
+
+                    <label for="contrasena">
+
+                        <i class="fa-solid fa-key"></i>
+
+                        Contraseña
+
+                    </label>
+
+
+                    <div class="campo-password">
+
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            placeholder="Escribe la contraseña..."
+                            autocomplete="off"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            id="mostrar-contrasena"
+                            aria-label="Mostrar u ocultar contraseña"
+                        >
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MENSAJES -->
+
+                <div
+                    id="mensaje-login"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- BOTÓN -->
+
+                <button
+                    type="submit"
+                    id="boton-entrar"
+                    class="boton-principal"
+                >
+
+                    <span>
+                        ENTRAR
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </form>
+
+
+            <p class="login-frase">
+                "Fly, my wings."
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main id="contenido-principal">
+
+
+        <!-- =================================================
+             BANNER DE IMAGEN
+        ================================================== -->
+
+        <div class="banner-superior">
+
+            <img
+                src="banner.jpg"
+                alt="Banner de la página"
+            >
+
+        </div>
+
+
+
+        <!-- =================================================
+             NAVBAR
+        ================================================== -->
+
+        <header class="navbar">
+
+
+            <div class="logo">
+
+                <i class="fa-solid fa-spider"></i>
+
+                <span>
+                    HOUSE OF SPIDERS
+                </span>
+
+            </div>
+
+
+            <!-- MENÚ MÓVIL -->
+
+            <button
+                type="button"
+                id="boton-menu"
+                class="boton-menu"
+                aria-label="Abrir menú"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav
+                class="enlaces-nav"
+                aria-label="Navegación principal"
+            >
+
+                <a
+                    href="#inicio"
+                    class="enlace-nav activo"
+                >
+                    Inicio
+                </a>
+
+                <a
+                    href="#mensaje"
+                    class="enlace-nav"
+                >
+                    Mensaje
+                </a>
+
+                <a
+                    href="#galeria"
+                    class="enlace-nav"
+                >
+                    Galería
+                </a>
+
+                <a
+                    href="#final"
+                    class="enlace-nav"
+                >
+                    Final
+                </a>
+
+            </nav>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             INICIO
+        ================================================== -->
+
+        <section
+            id="inicio"
+            class="seccion hero"
+        >
+
+
+            <div class="hero-decoracion">
+
+                <span>✦</span>
+                <span>✧</span>
+                <span>✦</span>
+
+            </div>
+
+
+            <div class="hero-contenido">
+
+
+                <p class="etiqueta">
+                    THE HOUSE OF SPIDERS
+                </p>
+
+
+                <h1>
+
+                    Feliz cumpleaños,
+
+                    <span>
+                        hijo mío
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-texto">
+
+                    Entre hilos, recuerdos y pequeñas
+                    historias, hoy toca celebrar a
+                    alguien especial de la OGI.
+
+                </p>
+
+
+                <a
+                    href="#mensaje"
+                    class="boton-principal enlace-hero"
+                >
+
+                    <span>
+                        CONTINUAR
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             MENSAJES
+        ================================================== -->
+
+        <section
+            id="mensaje"
+            class="seccion"
+        >
+
+
+            <div class="encabezado-seccion">
+
+
+                <p class="etiqueta">
+                    UNAS PALABRAS
+                </p>
+
+
+                <h2>
+
+                    Para
+
+                    <span>
+                        Bill
+                    </span>
+
+                </h2>
+
+
+                <p>
+                    Dos espacios entrelazados.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- MENSAJE 1 -->
+
+            <div
+                class="bloque-escritura"
+                data-reveal
+            >
+
+                <div class="numero-bloque">
+                    01
+                </div>
+
+
+                <div class="contenido-escritura">
+
+                    <h3>
+                        Un mensaje para ti
+                    </h3>
+
+
+                    <p class="mensaje-personal">
+
+                        Feliz cumpleaños, Bill.
+                        hijo mio, han pasado ya años desde que te he conocido
+                        y hey, te sigo teniendo el mismo aprecio que te tuve desde
+                        la primera vez que te adopte. te quiero y aprecio como un hijo
+                        recuerda, para mi y para gunisio, siempre seras nuestro hijo
+                        y te acompañaremos en todo junto a la OGI.
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MENSAJE 2 -->
+
+            <div
+                class="bloque-escritura"
+                data-reveal
+            >
+
+                <div class="numero-bloque">
+                    02
+                </div>
+
+
+                <div class="contenido-escritura">
+
+                    <h3>
+                        Otro recuerdo
+                    </h3>
+
+
+                    <p class="mensaje-personal">
+
+                        Honestamente no recuerdo el por qué hice 2 secciomes
+                        para escribir, asi que hare lo simple de toda la vida:
+                        desearte un feliz cumpleaños.
+                        espero y sea de tu gusto, hijo mio.
+                        te quiero y aprecio, ojala cumplas mucho mas.
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             GALERÍA
+        ================================================== -->
+
+        <section
+            id="galeria"
+            class="seccion"
+        >
+
+
+            <div class="encabezado-seccion">
+
+
+                <p class="etiqueta">
+                    THE THREAD OF MEMORIES
+                </p>
+
+
+                <h2>
+
+                    A Yi Sang
+
+                    <span>
+                        Galery
+                    </span>
+
+                </h2>
+
+
+                <p>
+                    Tres espacios para guardar
+                    algunos recuerdos.
+                </p>
+
+
+            </div>
+
+
+
+            <div class="galeria">
+
+
+                <!-- FOTO 1 -->
+
+                <div
+                    class="galeria-item"
+                    data-reveal
+                >
+
+                    <img
+                        src="foto1.jpg"
+                        alt="Primer recuerdo"
+                        loading="lazy"
+                    >
+
+
+                    <div class="galeria-overlay">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                        <span>
+                            Recuerdo I
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOTO 2 -->
+
+                <div
+                    class="galeria-item"
+                    data-reveal
+                >
+
+                    <img
+                        src="foto2.jpg"
+                        alt="Segundo recuerdo"
+                        loading="lazy"
+                    >
+
+
+                    <div class="galeria-overlay">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                        <span>
+                            Recuerdo II
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOTO 3 -->
+
+                <div
+                    class="galeria-item"
+                    data-reveal
+                >
+
+                    <img
+                        src="foto3.jpg"
+                        alt="Tercer recuerdo"
+                        loading="lazy"
+                    >
+
+
+                    <div class="galeria-overlay">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                        <span>
+                            Recuerdo III
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINAL
+        ================================================== -->
+
+        <section
+            id="final"
+            class="seccion seccion-final"
+        >
+
+
+            <div class="final-contenido">
+
+
+                <div class="final-simbolo">
+
+                    <i class="fa-solid fa-spider"></i>
+
+                </div>
+
+
+                <p class="etiqueta">
+                    THE END
+                </p>
+
+
+                <h2>
+
+                    Feliz cumpleaños,
+
+                    <span>
+                        Bill
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Que este nuevo año esté lleno de
+                    buenos momentos, historias y
+                    recuerdos que valga la pena conservar.
+
+                </p>
+
+
+                <p class="frase-final">
+
+                    "Fly, my wings."
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             VISOR DE IMÁGENES
+        ================================================== -->
+
+        <div
+            class="visor-imagen"
+            aria-hidden="true"
+        >
+
+
+            <button
+                type="button"
+                class="cerrar-visor"
+                aria-label="Cerrar imagen"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="visor-contenido">
+
+                <img
+                    src=""
+                    alt="Imagen ampliada"
+                >
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             BOTÓN VOLVER ARRIBA
+        ================================================== -->
+
+        <button
+            type="button"
+            id="boton-arriba"
+            aria-label="Volver arriba"
+        >
+
+            <i class="fa-solid fa-arrow-up"></i>
+
+        </button>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
